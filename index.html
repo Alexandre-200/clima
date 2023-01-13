@@ -38,29 +38,33 @@
           </button>
         </div>
       </div>
-      <div id="weather-data">
+      <div id="weather-data" class="hide">
         <h2>
           <i class="fa-solid fa-location-dot"></i>
-          <span id="city">Maceio</span>
-          <img src="https://countryflagsapi.com/png/pt" alt="bandeirado pais" id="country" />
+          <span id="city"></span>
+          <img src="" alt="bandeirado pais" id="country" />
         </h2>
-        <p id="temperatura"><span>38</span>&deg;C</p>
+        <p id="temperatura"><span></span>&deg;C</p>
         <div id="description-container">
-          <p id="description">Nublado</p>
+          <p id="description"></p>
           <img src="" alt="Condicoes do tempo" id="weather-icon" />
         </div>
         <div id="details-container">
-            <p id="umidity">
-                <i class="fa-solid fa-droplet">
-                    <span>48%</span>
-                </i>
-            </p>
-            <p id="wind">
-                <i class="fa-solid fa-wind">
-                    <span>3km/h</span>
-                </i>
-            </p>
+          <p id="humidity">
+            <i class="fa-solid fa-droplet"> </i>
+            <span></span>
+          </p>
+          <p id="wind">
+            <i class="fa-solid fa-wind"> </i>
+            <span></span>
+          </p>
         </div>
+      </div>
+      <div id="error-message" class="hide">
+        <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+      </div>
+      <div id="loader" class="hide">
+        <i class="fa-solid fa-spinner"></i>
       </div>
     </div>
   </body>

@@ -11,7 +11,7 @@ body
     height: 100vh
 
 .hide
-    display: none
+    display: none !important
 
 .container
     background-color: #5c54ed
@@ -19,6 +19,7 @@ body
     padding: 2rem
     color: #fdfdfd
     border-radius: 1rem
+    max-width: 400px
 
 /*Form*/
 .form h3
@@ -41,17 +42,56 @@ body
     border: none
     border-radius: 4px
     cursor: pointer
+    border-radius: 4px
 
 //clima
-#weather-data
+#weather-data, #error-message, #loader
     border-top: 1px solid #fff
     margin-top: 1.5rem
     padding-top: 1.5rem
     text-align: center
 
 #weather-data h2
-    display:flex
-        justify-content: center
-        align-items: center
-        margin-bottom: .6rem
-    
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: .6rem
+
+#weather-data h2 i
+    font-size: 1rem
+
+#weather-data span
+    margin: .6rem
+
+#temperature 
+  font-size: 4rem
+
+#country
+    height: 15px
+
+#description-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: .6rem 0
+
+#description
+    font-weight: bold
+    text-transform: capitalize
+
+#details-container
+    display: flex
+    justify-content: center
+    align-items: center
+
+#details-container #humidity
+    border-right: 2px solid #fff
+    margin: .6rem
+    padding: .6rem
+
+#loader i
+    animation: rotate 1.5s linear infinite
+
+@keyframes rotate
+    to
+        transform: rotate(360deg)
